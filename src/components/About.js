@@ -1,12 +1,15 @@
 import React from "react";
 import profilePic from "./profilepic.jpg";
+import { Link } from "react-router-dom";
 
 let data = {
   name: "Negar Rahbar",
   aboutme:
     "I am currently a pre-final year student at The TU WIEN of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
   address: "Vienna",
-  Website: <a href="https://nigorita.github.io">https://nigorita.github.io</a>
+  Website: (
+    <Link to="jttps://nigorita.github.com"> https://nigorita.github.com </Link>
+  )
 };
 
 export default function About() {

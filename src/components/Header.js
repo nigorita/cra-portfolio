@@ -1,5 +1,6 @@
 import React from "react";
 
+
 let data = {
   name: "Negar Rahbar",
   role: "Mathematics Tutor",
@@ -57,7 +58,7 @@ export default function Header() {
             <h3 style={{ color: "#fff", fontFamily: "sans-serif " }}>
               I am a {data.role}.{data.roleDescription}
             </h3>
-            <hr />
+            <hr/>
             <ul className="social">
               {data.socialLinks &&
                 data.socialLinks.map(item => {
