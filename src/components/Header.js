@@ -1,25 +1,25 @@
-import React from 'react';
+import React from "react";
 
 let data = {
-  name: 'Negar Rahbar',
-  role: 'Mathematics Tutor',
+  name: "Negar Rahbar",
+  role: "Mathematics Tutor",
   roleDescription:
-    'I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.',
+    "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
   socialLinks: [
     {
-      name: 'linkedin',
-      url: 'https://www.linkedin.com/in/rahul-bhatia-67ba08121/',
-      className: 'fa fa-linkedin'
+      name: "linkedin",
+      url: "https://www.linkedin.com/in/rahul-bhatia-67ba08121/",
+      className: "fa fa-linkedin"
     },
     {
-      name: 'github',
-      url: 'http://github.com/rbhatia46',
-      className: 'fa fa-github'
+      name: "github",
+      url: "http://github.com/rbhatia46",
+      className: "fa fa-github"
     },
     {
-      name: 'skype',
-      url: 'http://twitter.com/rbhatia46',
-      className: 'fa fa-twitter'
+      name: "skype",
+      url: "http://twitter.com/rbhatia46",
+      className: "fa fa-twitter"
     }
   ]
 };
@@ -54,7 +54,7 @@ export default function Header() {
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">I am {data.name}.</h1>
-            <h3 style={{ color: '#fff', fontFamily: 'sans-serif ' }}>
+            <h3 style={{ color: "#fff", fontFamily: "sans-serif " }}>
               I am a {data.role}.{data.roleDescription}
             </h3>
             <hr />
@@ -63,7 +63,7 @@ export default function Header() {
                 data.socialLinks.map(item => {
                   return (
                     <li key={item.name}>
-                      <a href={item.url} target="_blank">
+                      <a href={item.url} target={item.url}>
                         <i className={item.className}></i>
                       </a>
                     </li>
